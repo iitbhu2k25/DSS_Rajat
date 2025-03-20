@@ -25,7 +25,7 @@ export default function Header() {
               </Link>
               <Link href="https://iitbhu.ac.in/" className="transition-transform hover:scale-105">
                 <img
-                  src="/images/header/left2_iit_logo.png"
+                  src="/images/header/left2_IIt_logo.png"
                   alt="Logo 3"
                   title="iitbhu"
                   className="w-32 h-auto transform scale-150 ml-6 transition-transform duration-300"
