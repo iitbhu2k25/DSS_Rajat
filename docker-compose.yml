@@ -1,13 +1,5 @@
 
 services:
-  frontend:
-    build:
-      context: ./frontend/
-      dockerfile: docker/dockerfile.frontend
-    ports:
-      - "3000:3000"
-    restart: always
-
   backend:
     build:
       context: ./backend/
@@ -19,7 +11,7 @@ services:
       - .env
     volumes:
       - ./backend:/home/app
-    command: uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload --log-level debug
+    command: uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload 
     restart: always
     
   db:
