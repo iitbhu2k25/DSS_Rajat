@@ -21,7 +21,7 @@ class Settings(BaseSettings):
     POSTGRES_HOST : str
     POSTGRES_PORT :str
     DB_URL:AnyHttpUrl=Field(db_url_config(
-        drivername='postgres+psycopg2',
+        drivername='postgresql+psycopg2',
         username=config('POSTGRES_USER',cast=str),
         password=config('POSTGRES_PASSWORD',cast=str),
         host=config('POSTGRES_HOST',cast=str),
